@@ -1,0 +1,19 @@
+# tomcat
+server:
+  tomcat:
+    uri-encoding: utf-8     # 字符集编码格式
+    max-swallow-size: -1    # 全局：不限制请求体大小
+
+
+# spring框架
+spring:
+  application:
+    name: ai_interviewer
+  profiles:
+    active: dev # dev-开发环境，prod-生产环境，test-测试环境
+
+
+# 日志级别
+logging:
+  level:
+    root: info
