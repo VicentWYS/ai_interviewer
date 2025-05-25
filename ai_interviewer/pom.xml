@@ -23,9 +23,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <parent>
+        <!-- 继承 Spring Boot 官方父项目，统一管理版本和插件配置 -->
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.4</version>
+        <!-- 禁用本地父项目查找，强制使用远程的 spring-boot-starter-parent -->
+        <relativePath /> 
+    </parent>
+
+    <!-- 预留统一依赖版本管理的位置 -->
     <dependencyManagement>
         <dependencies>
-
+            
         </dependencies>
     </dependencyManagement>
 
